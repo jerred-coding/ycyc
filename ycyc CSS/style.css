@@ -20,7 +20,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 1rem;
 }
 
@@ -50,5 +50,31 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: " \279C";
+  margin-left: 3px;
+  transition: 0.5s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
