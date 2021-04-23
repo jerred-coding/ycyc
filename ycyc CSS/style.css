@@ -114,3 +114,44 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* list horizontal & vertical*/
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-heading);
+}
+
+.list--horizontal .list__item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.list--vertical {
+  padding-left: 3rem;
+  padding-bottom: 0.5rem;
+  list-style: decimal;
+}
+
+.list--vertical .list__item {
+  padding-left: 1rem;
+}
+
+/* .list--tick {
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding: 0.5rem;
+} */
+
+.list--tick .list__item::before {
+  padding: 0 1rem 0 0.5rem;
+  content: url(../images/tick.svg);
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item::before {
+    padding: 0 0.5rem 0 0.5rem;
+}
