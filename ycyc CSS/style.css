@@ -179,6 +179,14 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--white {
+  fill: white;
+}
 
 .icon--primary {
   fill: var(--color-primary);
@@ -196,6 +204,10 @@ a {
   height: 65px;
   justify-content: center;
   width: 65px;
+}
+
+.icon-container--accent {
+  background-color: var(--color-accent);
 }
 
 .btn {
@@ -309,7 +321,6 @@ a {
   width: 100%;
   box-shadow: 0 0 20px 20px rgb(233, 233, 233);
   overflow: hidden;
-  margin: 1rem;
 }
 
 .card__header,
@@ -386,10 +397,6 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
-    width: 50%;
-  }
-
   .plan__name {
     font-size: 1.4rem;
   }
@@ -409,10 +416,10 @@ a {
 }
 
 .media__title {
-  margin-top: 0;
+  margin: 0;
 }
 .media__body {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 .media__image {
   margin-top: 1rem;
@@ -422,8 +429,10 @@ a {
   height: 50px;
 }
 
-.quote__text {
-  font-size: 3rem;
+/* quote */
+
+.quote {
+  font-size: 2rem;
   font-style: italic;
   line-height: 1.3;
   color: var(--color-body-darker);
@@ -436,45 +445,47 @@ a {
   content: close-quote;
 }
 
-.quote .media__title {
+.quote__author {
   font-weight: 600;
-  font-size: 3.5rem;
-  margin-bottom: -0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-style: normal;
 }
 
-.quote .media__company {
-  font-size: 2.3rem;
+.quote__company {
+  font-size: 1.5rem;
   color: var(--color-heading);
   opacity: 0.4;
   font-weight: 500;
+  font-style: normal;
 }
 
 .quote .media__image {
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
 }
 
 @media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
   }
-  .quote .media__title {
-    font-size: 2.5rem;
+  .quote__author {
+    font-size: 2rem;
   }
-  .quote .media__company {
-    font-size: 1.6rem;
+  .quote__company {
+    font-size: 1rem;
   }
   .quote .media__image {
-    bottom: 17px;
+    bottom: 22px;
   }
 }
 
 .grid {
-  height: 100px;
+  height: 100%;
   display: grid;
 }
 
-.grid--1x3 .grid__column-1st {
+/* .grid--1x3 .grid__column-1st {
   background-color: gold;
 }
 .grid--1x3 .grid__column-2nd {
@@ -482,9 +493,9 @@ a {
 }
 .grid--1x3 .grid__column-3rd {
   background-color: red;
-}
+} */
 
-/* .grid--1x2 .grid__column-1st {
+.grid--1x2 .grid__column-1st {
   background-color: gold;
 }
 .grid--1x2 .grid__column-2nd {
@@ -507,13 +518,52 @@ a {
   .grid--1x2 .grid__column-3rd {
     display: none;
   }
-} */
+}
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  /* .grid--1x3 .grid__column-3rd {
+  .grid--1x3 .grid__column-3rd {
     display: inherit;
-  } */
+  }
+} */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial--container {
+  padding: 3rem;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > span {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.testimonial .quote {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.5rem;
+  }
+
+  .testimonial__image > span {
+    right: -30px;
+  }
 }
