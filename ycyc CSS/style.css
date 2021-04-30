@@ -1,7 +1,5 @@
 html {
   font-size: 62.5%;
-  display: flex;
-  justify-content: center;
 }
 
 :root {
@@ -27,7 +25,11 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   padding: 10px;
-  max-width: 1024px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 h1,
@@ -324,6 +326,8 @@ a {
   }
 }
 
+/* card  */
+
 .card {
   border-radius: 10px;
   width: 100%;
@@ -357,6 +361,8 @@ a {
   letter-spacing: 1px;
   font-weight: 550;
 }
+
+/* plan + card  */
 
 .plan__name {
   font-size: 2.4rem;
@@ -582,20 +588,14 @@ a {
   .testimonial__image > span {
     right: -30px;
   }
-
+}
 
 /* Callout */
-
-.callout {
-  display: flex;
-  justify-content: center;
-}
 
 .callout .grid {
   padding: 3rem;
   border-radius: 10px;
   background-color: var(--color-primary);
-  max-width: 1024px;
 }
 
 .callout .btn {
@@ -603,7 +603,7 @@ a {
   justify-self: center;
 }
 
-.callout .btn--long > a{
+.callout .btn--long > a {
   color: white;
 }
 
@@ -638,5 +638,71 @@ a {
 
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
+  }
+}
+
+/* Block */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+  position: relative;
+}
+
+.block--header {
+  text-align: center;
+  z-index: 999;
+  align-self: center;
+}
+
+.block__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.block p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.block--dark {
+  background-color: rgb(0, 0, 0);
+  color: #706c7e;
+}
+
+.block--dark .block__heading,
+.block--dark p {
+  color: white;
+}
+
+.block--skew-right {
+  padding-bottom: calc(var(--padding-vertical) + 2.5rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.block__banner-img {
+  max-width: 200px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 768px) {
+  .block__banner-img {
+    justify-self: end;
+    position: relative;
+    display: inline;
+    margin: 0 6rem 0rem 3rem;
+    opacity: 1;
+  }
+
+  .block .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .block p {
+    font-size: 1.5rem;
   }
 }
