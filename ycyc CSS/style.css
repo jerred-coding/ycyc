@@ -706,3 +706,58 @@ a {
     font-size: 1.5rem;
   }
 }
+
+.collapsible--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible__heading {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.collapsible__icon {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible--content {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.collapsible--content-p,
+.collapsible--list__item {
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 1rem;
+}
+
+.collapsible--expanded .collapsible__icon {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible--content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.collapsible--list {
+  display: flex;
+  flex-direction: column;
+}
+
+.collapsible--list__item {
+  padding: 1rem 2rem;
+}
+
+.collapsible--list > a {
+  color: var(--color-body);
+}
+
+.collapsible--list__item:hover {
+  color: var(--color-body-darker);
+}
