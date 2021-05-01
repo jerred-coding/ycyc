@@ -761,3 +761,73 @@ a {
 .collapsible--list__item:hover {
   color: var(--color-body-darker);
 }
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav__list {
+  width: 100%;
+}
+
+.nav__list .list__item {
+  border-bottom: 2px solid rgb(24, 24, 24);
+  padding: 1rem 2rem;
+}
+
+.list__item > a {
+  color: darkgrey;
+  transition: color 0.3s;
+}
+.list__item > a:hover {
+  color: white;
+}
+
+.nav .nav__list {
+  margin: 0;
+}
+
+.nav__toggler {
+  fill: darkgrey;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.nav__toggler:hover {
+  fill: white;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  fill: white;
+  box-shadow: 0 0 0 3px rgb(121, 121, 121);
+  border-radius: 5px;
+}
+
+.nav__logo {
+  transform: translateY(
+    5px
+  ); /* this is a hack for repositioning, use when we cannot control margin or padding. */
+}
+
+@media screen and (min-width: 768px) {
+  .nav .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    padding: 0 1rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__list .list__item {
+    font-size: 2rem;
+    border: 0;
+  }
+}
