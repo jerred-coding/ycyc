@@ -9,96 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="ycyc CSS/normalized.css" />
-    <link rel="stylesheet" href="ycyc CSS/style.css" />
-
+    <link rel="stylesheet" href="ycyc.CSS/normalized.css" />
+    <link rel="stylesheet" href="ycyc.CSS/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <div class="callout container">
-      <div class="grid grid--1x2">
-        <div class="callout--info">
-          <h2 class="callout__heading">Ready To Get Started?</h2>
-          <p class="callout__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            sapiente veniam maiores neque eaque necessitatibus.
-          </p>
-        </div>
-        <div class="btn btn--secondary btn--long">
-          <a href="#">JOIN NOW</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="block">
-      <header class="block--header">
-        <h2 class="block__heading">Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum
-          impedit exercitationem qui mollitia temporibus voluptate, earum
-          dolorum illum error.
-        </p>
-      </header>
-    </div>
-
-    <div class="block block--dark block--skew-right block--bg">
-      <div class="grid grid--1x2">
-        <header class="block--header">
-          <h2 class="block__heading">Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum
-            impedit exercitationem qui mollitia temporibus voluptate, earum
-            dolorum illum error.
-          </p>
-        </header>
-
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="images/banner.png 1x, images/banner@2x.png 2x"
-          />
-          <img
-            class="block__banner-img"
-            src="images/banner.png"
-            alt="banner image"
-          />
-        </picture>
-      </div>
-    </div>
-
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible--header">
-        <h2 class="collapsible__heading">About</h2>
-        <svg class="icon icon--white collapsible__icon">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <p class="collapsible--content collapsible--content-p">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque,
-        fugit.
-      </p>
-    </div>
-
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible--header">
-        <h2 class="collapsible__heading">T&C</h2>
-        <svg class="icon icon--white collapsible__icon">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible--content">
-        <div class="collapsible--list">
-          <a class="collapsible--list__item" href="#">AAAAA</a>
-          <a class="collapsible--list__item" href="#">BBBBB</a>
-          <a class="collapsible--list__item" href="#">CCCCC</a>
-        </div>
-      </div>
-    </div>
-    <section class="nav--block">
+    <div class="nav--block">
       <nav class="container nav collapsible">
         <a class="nav__logo" href="#">
           <img src="images/logo.svg" alt="" />
@@ -113,11 +31,11 @@
           <li class="list__item"><a href="#">Durian</a></li>
         </ul>
       </nav>
-    </section>
+    </div>
 
     <section class="block block--dark block--skew-right hero">
       <div class="container grid grid--1x2">
-        <header class="block--header hero--content">
+        <header class="block--header hero--content" data-aos="fade-down">
           <h2 class="block__heading">Cloud Hosting For Pros</h2>
           <p class="hero__tagline">
             Deploy your website in less than 60 seconds
@@ -125,7 +43,7 @@
           <a class="btn btn--accent btn--long" href="#">GET STARTED</a>
         </header>
 
-        <picture>
+        <picture data-aos="fade-down">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -150,7 +68,7 @@
           mollitia sunt dignissimos accusamus nulla tempora?
         </p>
       </div>
-      <div class="input-group">
+      <div class="input-group" data-aos="fade-right">
         <input
           class="input"
           type="text"
@@ -163,7 +81,7 @@
           SEARCH
         </button>
       </div>
-      <ul class="list block-domain__prices">
+      <ul class="list block-domain__prices" data-aos="fade-right">
         <li>.sg $7</li>
         <li><span class="badge badge--secondary"> .com $9.26</span></li>
         <li>.space $12</li>
@@ -176,7 +94,7 @@
     <section class="block container block-plans">
       <div class="grid grid--1x2 grid--1x3">
         <div class="plan">
-          <div class="card card--secondary">
+          <div class="card card--secondary" data-aos="fade-right">
             <header class="card__header">
               <h3 class="plan__name">Exclusive</h3>
               <span class="plan__price">$36</span>
@@ -197,7 +115,7 @@
         </div>
 
         <div class="plan plan--popular">
-          <div class="card card--primary">
+          <div class="card card--primary" data-aos="fade-up">
             <header class="card__header">
               <h3 class="plan__name">Exclusive</h3>
               <span class="plan__price">$36</span>
@@ -218,7 +136,7 @@
         </div>
 
         <div class="plan">
-          <div class="card card--secondary">
+          <div class="card card--secondary" data-aos="fade-left">
             <header class="card__header">
               <h3 class="plan__name">Exclusive</h3>
               <span class="plan__price">$36</span>
@@ -247,7 +165,7 @@
       </header>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -262,7 +180,7 @@
           <a class="link-arrow" href="#">LEARN MORE</a>
         </div>
 
-        <picture>
+        <picture data-aos="flip-up">
           <source
             type="image/jpg"
             srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
@@ -274,7 +192,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -289,7 +207,7 @@
           <a class="link-arrow" href="#">LEARN MORE</a>
         </div>
 
-        <picture>
+        <picture data-aos="flip-up">
           <source
             type="image/jpg"
             srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x" />
@@ -301,7 +219,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -316,7 +234,7 @@
           <a class="link-arrow" href="#">LEARN MORE</a>
         </div>
 
-        <picture>
+        <picture data-aos="flip-up">
           <source
             type="image/jpg"
             srcset="images/support.jpg 1x, images/support@2x.jpg 2x" />
@@ -333,7 +251,7 @@
         <h2 class="block__heading">User-Friendly Control Panel</h2>
       </header>
       <article class="grid grid--1x2 container">
-        <picture class="block--showcase__img">
+        <picture class="block--showcase__img" data-aos="fade-right">
           <source
             type="image/png"
             srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
@@ -343,7 +261,7 @@
           <img src="images/ipad@2x.jpg" alt=""
         /></picture>
 
-        <ul class="list">
+        <ul class="list" data-aos="zoom-in-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -411,7 +329,7 @@
         <div class="testimonial">
           <div class="card testimonial--container">
             <div class="grid grid--1x2">
-              <div class="testimonial__image">
+              <div class="testimonial__image" data-aos="flip-left">
                 <img
                   src="images/testimonial.jpg"
                   alt="smiling customer image"
@@ -448,17 +366,17 @@
       </div>
     </section>
 
-    <section class="block block--darkgrey footer">
+    <footer class="block block--darkgrey footer">
       <div class="container grid footer--grid">
         <article class="collapsible collapsible--expanded footer--content">
-          <header class="collapsible--header">
+          <div class="collapsible--header">
             <h2 class="collapsible__heading footer__heading">About</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible--content">
-            <li><a href="#"> AAAAAcbjkcldas/a></li>
+            <li><a href="#"> AAAAAcbjkcldas</a></li>
             <li><a href="#"> BBBBB</a></li>
             <li><a href="#"> CCCCC</a></li>
             <li><a href="#"> DDDDD</a></li>
@@ -467,12 +385,12 @@
         </article>
 
         <article class="collapsible footer--content">
-          <header class="collapsible--header">
+          <div class="collapsible--header">
             <h2 class="collapsible__heading footer__heading">About</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible--content">
             <li><a href="#"> AAAAA</a></li>
             <li><a href="#"> BBBBB</a></li>
@@ -483,12 +401,12 @@
         </article>
 
         <article class="collapsible footer--content">
-          <header class="collapsible--header">
+          <div class="collapsible--header">
             <h2 class="collapsible__heading footer__heading">About</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible--content">
             <li><a href="#"> AAAAA</a></li>
             <li><a href="#"> BBBBB</a></li>
@@ -499,12 +417,12 @@
         </article>
 
         <article class="collapsible footer--content">
-          <header class="collapsible--header">
+          <div class="collapsible--header">
             <h2 class="collapsible__heading footer__heading">About</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible--content">
             <li><a href="#"> AAAAA</a></li>
             <li><a href="#"> BBBBB</a></li>
@@ -513,13 +431,17 @@
             <li><a href="#"> EEEEE</a></li>
           </ul>
         </article>
-        <article class="footer__logo">
+        <div class="footer__logo">
           <img src="images/logo.svg" alt="logo" />
           <p class="footer__copyright">Copyright &copy; 2020</p>
-        </article>
+        </div>
       </div>
-    </section>
+    </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
